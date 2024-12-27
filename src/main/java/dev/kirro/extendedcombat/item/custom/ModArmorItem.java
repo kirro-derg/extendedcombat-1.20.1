@@ -10,6 +10,7 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
+import java.util.List;
 import java.util.Map;
 
 public class ModArmorItem extends ArmorItem {
@@ -17,7 +18,8 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterial.NETHER_STEEL, new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 1,
-                            false, false, true)).build();
+                            false, false, true))
+                    .build();
 
 
 

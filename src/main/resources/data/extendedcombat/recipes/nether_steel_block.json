@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "extendedcombat:nether_steel_ingot"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+
+  ],
+  "result": {
+    "item": "extendedcombat:nether_steel_block"
+  }
+}

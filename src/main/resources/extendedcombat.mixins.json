@@ -1,11 +1,13 @@
 {
 	"required": true,
-	"package": "dev.kirro.mixin",
+	"package": "dev.kirro.extendedcombat.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"HideOffhandItemMixin",
-		"ShieldBreakMixin",
-		"TwoHandedGreatswordMixin"
+		"ShieldBreakMixin"
+	],
+	"client": [
+		"TwoHandedGreatswordMixin",
+		"HideOffhandItemMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

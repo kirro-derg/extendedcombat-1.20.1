@@ -1,6 +1,7 @@
 package dev.kirro.extendedcombat.item;
 
 import dev.kirro.extendedcombat.ExtendedCombat;
+import dev.kirro.extendedcombat.item.custom.ModArmorItem;
 import dev.kirro.extendedcombat.item.custom.ModArmorMaterial;
 import dev.kirro.extendedcombat.item.custom.ModToolMaterials;
 import dev.kirro.extendedcombat.item.custom.PickSwordItem;
@@ -19,7 +20,7 @@ public class ModItems {
             new PickSwordItem(ModToolMaterials.NETHER_STEEL, 10, -2.7f, new Item.Settings()));
 
     public static final Item NETHER_STEEL_HELMET = registerItem("nether_steel_helmet",
-            new ArmorItem(ModArmorMaterial.NETHER_STEEL, ArmorItem.Type.HELMET, new Item.Settings()));
+            new ModArmorItem(ModArmorMaterial.NETHER_STEEL, ArmorItem.Type.HELMET, new Item.Settings()));
     public static final Item NETHER_STEEL_CHESTPLATE = registerItem("nether_steel_chestplate",
             new ArmorItem(ModArmorMaterial.NETHER_STEEL, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
     public static final Item NETHER_STEEL_LEGGINGS = registerItem("nether_steel_leggings",

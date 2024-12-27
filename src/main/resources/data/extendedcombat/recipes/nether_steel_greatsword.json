@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "extendedcombat:nether_steel_ingot"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "H": {
+      "item": "extendedcombat:handle"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    " N#",
+    "G#N",
+    "HG "
+  ],
+  "result": {
+    "item": "extendedcombat:nether_steel_greatsword"
+  }
+}

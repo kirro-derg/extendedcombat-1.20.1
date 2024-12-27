@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "extendedcombat:nether_steel_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_leggings"
+  },
+  "result": {
+    "item": "extendedcombat:nether_steel_leggings"
+  },
+  "template": {
+    "item": "extendedcombat:nether_steel_upgrade"
+  }
+}

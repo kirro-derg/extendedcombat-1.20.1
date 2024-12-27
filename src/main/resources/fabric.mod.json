@@ -3,7 +3,7 @@
 	"id": "extendedcombat",
 	"version": "${version}",
 	"name": "extendedcombat",
-	"description": "simple mod with some armour, a weapon, and some crafting ingredients for said armour and weapon;  more to come :3",
+	"description": "Mod that adds a \"small\" weapon, and some armour, more may be to come :3",
 	"authors": [
 		"kirro"
 	],
@@ -11,7 +11,7 @@
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/extendedcombat/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"dev.kirro.ExtendedcombatDataGenerator"
+		],
+		"client": [
+			"dev.kirro.extendedcombat.ExtendedCombatClient"
 		]
 	},
 	"mixins": [
