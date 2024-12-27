@@ -3,9 +3,9 @@
 	"id": "extendedcombat",
 	"version": "${version}",
 	"name": "extendedcombat",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "simple mod with some armour, a weapon, and some crafting ingredients for said armour and weapon;  more to come :3",
 	"authors": [
-		"Me!"
+		"kirro"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
