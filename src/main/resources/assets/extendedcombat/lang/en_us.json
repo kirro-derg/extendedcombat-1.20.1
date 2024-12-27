@@ -1,0 +1,16 @@
+{
+  "itemgroup.extended_combat_items": "Extended Combat",
+
+  "item.extendedcombat.nether_steel_ingot": "Nether Steel Ingot",
+  "item.extendedcombat.handle": "Sturdy Handle",
+  "item.extendedcombat.nether_steel_upgrade": "Nether Steel Upgrade Template",
+
+  "item.extendedcombat.nether_steel_greatsword": "Nether Steel Greatsword",
+
+  "block.extendedcombat.nether_steel_block": "Block of Nether Steel",
+
+  "item.extendedcombat.nether_steel_helmet": "Nether Steel Helmet",
+  "item.extendedcombat.nether_steel_chestplate": "Nether Steel Chestplate",
+  "item.extendedcombat.nether_steel_leggings": "Nether Steel Leggings",
+  "item.extendedcombat.nether_steel_boots": "Nether Steel Boots"
+}
