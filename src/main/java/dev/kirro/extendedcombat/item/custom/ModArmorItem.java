@@ -9,7 +9,6 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-
 import java.util.Map;
 
 public class ModArmorItem extends ArmorItem {
