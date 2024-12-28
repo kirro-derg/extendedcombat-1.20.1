@@ -8,6 +8,8 @@
   "item.extendedcombat.nether_steel_greatsword": "Nether Steel Greatsword",
 
   "block.extendedcombat.nether_steel_block": "Block of Nether Steel",
+  "block.extendedcombat.warding_block": "Warding Block",
+  "tooltip.extendedcombat.warding_block": "Once placed, this block will disable mob spawning in a 55 block radius around itself",
 
   "item.extendedcombat.nether_steel_helmet": "Nether Steel Helmet",
   "item.extendedcombat.nether_steel_chestplate": "Nether Steel Chestplate",

@@ -1,10 +1,7 @@
 package dev.kirro.extendedcombat.item;
 
 import dev.kirro.extendedcombat.ExtendedCombat;
-import dev.kirro.extendedcombat.item.custom.ModArmorItem;
-import dev.kirro.extendedcombat.item.custom.ModArmorMaterial;
-import dev.kirro.extendedcombat.item.custom.ModToolMaterials;
-import dev.kirro.extendedcombat.item.custom.PickSwordItem;
+import dev.kirro.extendedcombat.item.custom.*;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
