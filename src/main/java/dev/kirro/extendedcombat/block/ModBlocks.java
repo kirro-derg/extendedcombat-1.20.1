@@ -53,5 +53,8 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.NETHER_STEEL_BLOCK);
         });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(ModBlocks.WARDING_BLOCK);
+        });
     }
 }

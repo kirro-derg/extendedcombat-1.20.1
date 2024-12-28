@@ -21,6 +21,7 @@ public class ModItemGroups {
                 entries.add(ModItems.NETHER_STEEL_UPGRADE);
 
                 entries.add(ModBlocks.NETHER_STEEL_BLOCK);
+                entries.add(ModBlocks.WARDING_BLOCK);
 
                 entries.add(ModItems.NETHER_STEEL_GREATSWORD);
 
