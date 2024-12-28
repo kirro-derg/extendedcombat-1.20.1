@@ -4,33 +4,39 @@ import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import com.llamalad7.mixinextras.sugar.Local;
 import com.llamalad7.mixinextras.sugar.ref.LocalRef;
 import dev.kirro.extendedcombat.block.ModBlocks;
+import dev.kirro.extendedcombat.villager.ModPOI;
 import net.minecraft.entity.mob.HostileEntity;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.ServerWorldAccess;
+import net.minecraft.world.poi.PointOfInterestStorage;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
+import net.fabricmc.fabric.api.object.builder.v1.world.poi.PointOfInterestHelper;
+
 
 @Mixin(HostileEntity.class)
 public class WardingBlockDisableSpawnMixin {
     @ModifyReturnValue(method = "isSpawnDark", at = @At("RETURN"))
     private static boolean isSpawnDarkMixin(boolean original, @Local LocalRef<ServerWorldAccess> world, @Local BlockPos pos) {
         int radius = 55;
-        BlockPos.Mutable mutablePos = new BlockPos.Mutable();
 
-        // Iterate through a cubic region centered on `pos` with the given radius
-        for (int x = -radius; x <= radius; x++) {
-            for (int y = -radius; y <= radius; y++) {
-                for (int z = -radius; z <= radius; z++) {
-                    mutablePos.set(pos.getX() + x, pos.getY() + y, pos.getZ() + z);
-
-                    // Check if the block at the current position is the desired type
-                    if (world.get().getBlockState(mutablePos).getBlock() == ModBlocks.WARDING_BLOCK) {
-                        return original && false; // Early exit if a Warding Block is found
-                    }
-                }
-            }
+        if (!(world.get() instanceof ServerWorld serverWorld)) {
+            return original; // If not, default to original behavior
         }
 
-        return original; // No Warding Block found within the radius
+        // Get the PointOfInterestStorage from the world
+        PointOfInterestStorage poiStorage = serverWorld.getPointOfInterestStorage();
+
+        // Check for points of interest within the radius
+        boolean poiNearby = poiStorage.getInCircle(
+                registryEntry -> registryEntry.value() == ModPOI.WARDING_BLOCK_POI, // Filter for specific POI type
+                pos,
+                radius,
+                PointOfInterestStorage.OccupationStatus.ANY // Adjust status if needed
+        ).findAny().isPresent(); // Use `findAny` for efficiency
+
+        return original && !poiNearby; // Return false if a POI is nearby
+
     }
 }

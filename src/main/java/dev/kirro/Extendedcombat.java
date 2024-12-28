@@ -4,6 +4,7 @@ import dev.kirro.extendedcombat.ModItemGroups;
 import dev.kirro.extendedcombat.block.ModBlocks;
 import dev.kirro.extendedcombat.item.ModItems;
 //import dev.kirro.extendedcombat.sound.ModSounds;
+import dev.kirro.extendedcombat.villager.ModPOI;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -21,5 +22,6 @@ public class Extendedcombat implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModPOI.registerPOIs();
 	}
 }
