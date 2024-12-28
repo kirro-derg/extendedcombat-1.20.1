@@ -1,6 +1,7 @@
 package dev.kirro.extendedcombat.item.custom;
 
 
+import dev.kirro.extendedcombat.block.ModBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
@@ -19,11 +20,13 @@ public class PickSwordItem extends SwordItem {
         if (state.isOf(Blocks.COBWEB)) {
             return 15.0F;
         } else if (state.isIn(BlockTags.PICKAXE_MINEABLE)){
-            return 5.0f;
+            return 15.0f;
         } else if (state.isIn(BlockTags.AXE_MINEABLE)) {
-            return 5.0f;
+            return 15.0f;
         } else if (state.isIn(BlockTags.WOOL)){
-            return 5.0f;
+            return 15.0f;
+        } else if (state.isOf(ModBlocks.WARDING_BLOCK)){
+            return 15.0f;
         } else {
             return state.isIn(BlockTags.SWORD_EFFICIENT) ? 1.5F : 1.0F;
         }
