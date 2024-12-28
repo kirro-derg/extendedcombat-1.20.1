@@ -1,13 +1,13 @@
 package dev.kirro.extendedcombat.sound;
 
-import dev.kirro.extendedcombat.ExtendedCombat;
+/*import dev.kirro.extendedcombat.ExtendedCombat;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 
-/*public class ModSounds {
+public class ModSounds {
     public static final SoundEvent NETHER_STEEL_BLOCK_BREAK = registerSoundEvent("nether_steel_block_break");
     public static final SoundEvent NETHER_STEEL_BLOCK_STEP = registerSoundEvent("nether_steel_block_fall");
     public static final SoundEvent NETHER_STEEL_BLOCK_PLACE = registerSoundEvent("nether_steel_block_fall");
