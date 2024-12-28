@@ -9,7 +9,10 @@
 	],
 	"client": [
 		"TwoHandedGreatswordMixin",
-		"HideOffhandItemMixin"
+		"HideOffhandItemMixin",
+		"ItemRendererAccessorMixin",
+		"ItemRendererMixin",
+		"ModelLoaderMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

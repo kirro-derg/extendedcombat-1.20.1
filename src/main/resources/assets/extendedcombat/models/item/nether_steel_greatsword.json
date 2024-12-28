@@ -1,42 +1,6 @@
 {
-	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/handheld",
 	"textures": {
 		"layer0": "extendedcombat:item/nether_steel_greatsword"
-	},
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [-166.99, -46.94, -127],
-			"translation": [-0.25, 13.75, 2.25],
-			"scale": [2, 2, 2]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [-166.99, -46.94, 152.97],
-			"translation": [0.75, 14, 0.5],
-			"scale": [2, 2, 2]
-		},
-		"firstperson_righthand": {
-			"rotation": [0, -90, 25],
-			"translation": [1.13, 3.2, 1.13],
-			"scale": [1.65, 1.65, 1.65]
-		},
-		"firstperson_lefthand": {
-			"rotation": [-45, -90, -90],
-			"translation": [0, 8.25, 0.75],
-			"scale": [1.65, 1.65, 1.65]
-		},
-		"ground": {
-			"rotation": [0, 0, 45],
-			"translation": [0, 7.5, 0]
-		},
-		"head": {
-			"rotation": [0, 0, 180],
-			"translation": [0, -12, 5.5],
-			"scale": [2, 2, 2]
-		},
-		"fixed": {
-			"translation": [0, 0, -0.5],
-			"scale": [1.2, 1.2, 1.2]
-		}
 	}
 }
