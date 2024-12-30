@@ -17,6 +17,13 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 	maven {
+		url = "https://maven.jamieswhiteshirt.com/libs-release"
+		content {
+			includeGroup "com.jamieswhiteshirt"
+		}
+	}
+
+	maven {
 		url = "https://jitpack.io"
 	}
 }
@@ -38,6 +45,7 @@ dependencies {
 	modApi("com.github.Virtuoel:Pehkui:${pehkui_version}", {
 		exclude group: "net.fabricmc.fabric-api"
 	})
+	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:$VERSION")
 }
 
 processResources {

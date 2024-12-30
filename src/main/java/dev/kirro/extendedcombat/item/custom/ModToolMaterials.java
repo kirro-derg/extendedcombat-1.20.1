@@ -9,7 +9,7 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    NETHER_STEEL(MiningLevels.NETHERITE, 8124, 15.0F, 10.0F, 44, () -> Ingredient.ofItems(Items.NETHERITE_INGOT));
+    NETHER_STEEL(MiningLevels.NETHERITE, 8124, 20.0F, 7F, 44, () -> Ingredient.ofItems(Items.NETHERITE_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;
@@ -18,7 +18,7 @@ public enum ModToolMaterials implements ToolMaterial {
     private final int enchantability;
     private final Lazy<Ingredient> repairIngredient;
 
-    private ModToolMaterials(int miningLevel, int itemDurability, float miningSpeed,
+    ModToolMaterials(int miningLevel, int itemDurability, float miningSpeed,
                              float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
         this.itemDurability = itemDurability;

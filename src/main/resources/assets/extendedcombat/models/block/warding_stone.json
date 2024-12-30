@@ -1,0 +1,51 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"particle": "extendedcombat:block/warding_stone_side",
+		"top": "extendedcombat:block/warding_stone_top",
+		"side": "extendedcombat:block/warding_stone_side"
+	},
+	"elements": [
+		{
+			"from": [1, 0, 1],
+			"to": [15, 32, 15],
+			"faces": {
+				"north": {"uv": [0, 0, 7, 16], "texture": "#side"},
+				"east": {"uv": [0, 0, 7, 16], "texture": "#side"},
+				"south": {"uv": [0, 0, 7, 16], "texture": "#side"},
+				"west": {"uv": [0, 0, 7, 16], "texture": "#side"},
+				"up": {"uv": [15, 15, 1, 1], "texture": "#top"},
+				"down": {"uv": [15, 1, 1, 15], "texture": "#top", "cullface": "down"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [45, 45, 0],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [45, 45, 0],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 45, 0],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 45, 0],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"ground": {
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"gui": {
+			"translation": [0, -4, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"fixed": {
+			"scale": [0.3, 0.3, 0.3]
+		}
+	}
+}

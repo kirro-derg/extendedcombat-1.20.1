@@ -6,10 +6,11 @@
   "item.extendedcombat.nether_steel_upgrade": "Nether Steel Upgrade Template",
 
   "item.extendedcombat.nether_steel_greatsword": "Nether Steel Greatsword",
+  "item.extendedcombat.nether_steel_pickaxe": "Nether Steel Pickaxe",
 
   "block.extendedcombat.nether_steel_block": "Block of Nether Steel",
-  "block.extendedcombat.warding_block": "Warding Block",
-  "tooltip.extendedcombat.warding_block": "Once placed, this block will disable mob spawning in a 55 block radius around itself",
+  "block.extendedcombat.warding_stone": "Warding Stone",
+  "tooltip.extendedcombat.warding_stone": "Once placed, this stone will disable mob spawning in a 55 block radius around itself",
 
   "item.extendedcombat.nether_steel_helmet": "Nether Steel Helmet",
   "item.extendedcombat.nether_steel_chestplate": "Nether Steel Chestplate",

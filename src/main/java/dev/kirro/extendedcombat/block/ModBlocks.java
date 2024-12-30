@@ -1,6 +1,7 @@
 package dev.kirro.extendedcombat.block;
 
 import dev.kirro.extendedcombat.ExtendedCombat;
+import dev.kirro.extendedcombat.block.custom.WardingStoneBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -25,12 +26,12 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(100f)
                     .requiresTool().sounds(BlockSoundGroup.NETHERITE)));
 
-    public static final Block WARDING_BLOCK = registerBlock("warding_block",
-            new Block(AbstractBlock.Settings.create().strength(6f)
-                    .sounds(BlockSoundGroup.WART_BLOCK)) {
+    public static final Block WARDING_STONE = registerBlock("warding_stone",
+            new WardingStoneBlock(AbstractBlock.Settings.create().strength(6f)
+                    .sounds(BlockSoundGroup.DEEPSLATE_BRICKS).nonOpaque()) {
                 @Override
                 public void appendTooltip(ItemStack stack, @Nullable BlockView world, List<Text> tooltip, TooltipContext options) {
-                    tooltip.add(Text.translatable("tooltip.extendedcombat.warding_block"));
+                    tooltip.add(Text.translatable("tooltip.extendedcombat.warding_stone"));
                     super.appendTooltip(stack, world, tooltip, options);
                 }
             });
@@ -54,7 +55,7 @@ public class ModBlocks {
             fabricItemGroupEntries.add(ModBlocks.NETHER_STEEL_BLOCK);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(ModBlocks.WARDING_BLOCK);
+            fabricItemGroupEntries.add(ModBlocks.WARDING_STONE);
         });
     }
 }

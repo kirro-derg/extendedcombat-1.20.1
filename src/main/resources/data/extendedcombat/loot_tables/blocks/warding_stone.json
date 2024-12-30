@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "extendedcombat:warding_block",
+          "name": "extendedcombat:warding_stone",
           "weight": 1
         }
       ],

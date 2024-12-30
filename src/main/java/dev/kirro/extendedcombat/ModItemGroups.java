@@ -21,9 +21,10 @@ public class ModItemGroups {
                 entries.add(ModItems.NETHER_STEEL_UPGRADE);
 
                 entries.add(ModBlocks.NETHER_STEEL_BLOCK);
-                entries.add(ModBlocks.WARDING_BLOCK);
+                entries.add(ModBlocks.WARDING_STONE);
 
                 entries.add(ModItems.NETHER_STEEL_GREATSWORD);
+                entries.add(ModItems.NETHER_STEEL_PICKAXE);
 
                 entries.add(ModItems.NETHER_STEEL_BOOTS);
                 entries.add(ModItems.NETHER_STEEL_LEGGINGS);

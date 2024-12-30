@@ -1,8 +1,14 @@
 package dev.kirro.extendedcombat.item.custom;
 
+import com.google.common.collect.ImmutableMultimap;
+import com.google.common.collect.Multimap;
+import com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes;
 import dev.kirro.extendedcombat.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.attribute.EntityAttribute;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -32,9 +38,9 @@ public class ModArmorScaleChanger implements ModInitializer {
             ScaleData scaleData = scaleType.getScaleData(player);
 
             if (wearingModdedArmor) {
-                scaleData.setScale(1.5F); // 1.5 times the normal size
+                scaleData.setTargetScale(1.25F); // 1.25 times the normal size
             } else {
-                scaleData.setScale(1.0F); // Reset to normal scale
+                scaleData.setTargetScale(1.0F); // Reset to normal scale
             }
         }
     }
@@ -49,4 +55,6 @@ public class ModArmorScaleChanger implements ModInitializer {
                 leggings.getItem() == MODDED_LEGGINGS &&
                 boots.getItem() == MODDED_BOOTS;
     }
+
+
 }

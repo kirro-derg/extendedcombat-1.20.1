@@ -1,6 +1,10 @@
 package dev.kirro.extendedcombat.item.custom;
 
 import com.google.common.collect.ImmutableMap;
+import net.minecraft.enchantment.AquaAffinityEnchantment;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.enchantment.ProtectionEnchantment;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -18,8 +22,6 @@ public class ModArmorItem extends ArmorItem {
                     .put(ModArmorMaterial.NETHER_STEEL, new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 1,
                             false, false, true))
                     .build();
-
-
 
     public ModArmorItem(ArmorMaterial material, Type type, Settings settings) {
         super(material, type, settings);

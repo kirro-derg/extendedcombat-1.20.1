@@ -14,7 +14,9 @@ public class ModItems {
     public static final Item NETHER_STEEL_UPGRADE = registerItem("nether_steel_upgrade", new Item(new Item.Settings()));
 
     public static final Item NETHER_STEEL_GREATSWORD = registerItem("nether_steel_greatsword",
-            new PickSwordItem(ModToolMaterials.NETHER_STEEL, 10, -2.7f, new Item.Settings()));
+            new PickSwordItem(ModToolMaterials.NETHER_STEEL, 7, -2.7f, new Item.Settings()));
+    public static final Item NETHER_STEEL_PICKAXE = registerItem("nether_steel_pickaxe",
+            new ModPickaxeItem(ModToolMaterials.NETHER_STEEL, 1, -3f, new Item.Settings()));
 
     public static final Item NETHER_STEEL_HELMET = registerItem("nether_steel_helmet",
             new ModArmorItem(ModArmorMaterial.NETHER_STEEL, ArmorItem.Type.HELMET, new Item.Settings()));
@@ -43,6 +45,9 @@ public class ModItems {
             fabricItemGroupEntries.add(ModItems.NETHER_STEEL_LEGGINGS);
             fabricItemGroupEntries.add(ModItems.NETHER_STEEL_CHESTPLATE);
             fabricItemGroupEntries.add(ModItems.NETHER_STEEL_HELMET);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(NETHER_STEEL_PICKAXE);
         });
     }
 }

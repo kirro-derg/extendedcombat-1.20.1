@@ -3,7 +3,6 @@ package dev.kirro.extendedcombat.mixin;
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import com.llamalad7.mixinextras.sugar.Local;
 import com.llamalad7.mixinextras.sugar.ref.LocalRef;
-import dev.kirro.extendedcombat.block.ModBlocks;
 import dev.kirro.extendedcombat.villager.ModPOI;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.server.world.ServerWorld;
@@ -12,11 +11,10 @@ import net.minecraft.world.ServerWorldAccess;
 import net.minecraft.world.poi.PointOfInterestStorage;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
-import net.fabricmc.fabric.api.object.builder.v1.world.poi.PointOfInterestHelper;
 
 
 @Mixin(HostileEntity.class)
-public class WardingBlockDisableSpawnMixin {
+public class WardingStoneDisableSpawnMixin {
     @ModifyReturnValue(method = "isSpawnDark", at = @At("RETURN"))
     private static boolean isSpawnDarkMixin(boolean original, @Local LocalRef<ServerWorldAccess> world, @Local BlockPos pos) {
         int radius = 55;
@@ -30,7 +28,7 @@ public class WardingBlockDisableSpawnMixin {
 
         // Check for points of interest within the radius
         boolean poiNearby = poiStorage.getInCircle(
-                registryEntry -> registryEntry.value() == ModPOI.WARDING_BLOCK_POI, // Filter for specific POI type
+                registryEntry -> registryEntry.value() == ModPOI.WARDING_STONE_POI, // Filter for specific POI type
                 pos,
                 radius,
                 PointOfInterestStorage.OccupationStatus.ANY // Adjust status if needed

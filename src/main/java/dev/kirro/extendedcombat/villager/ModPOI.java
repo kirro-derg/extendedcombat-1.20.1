@@ -12,11 +12,11 @@ import net.minecraft.util.Identifier;
 import net.minecraft.world.poi.PointOfInterestType;
 
 public class ModPOI {
-    public static final PointOfInterestType WARDING_BLOCK_POI = PointOfInterestHelper.register(
-            new Identifier(Extendedcombat.MOD_ID, "warding_block_poi"),
+    public static final PointOfInterestType WARDING_STONE_POI = PointOfInterestHelper.register(
+            new Identifier(Extendedcombat.MOD_ID, "warding_stone_poi"),
             1, // Ticket count (controls how many entities can use this POI)
             1, // Search distance
-            ImmutableSet.copyOf(ModBlocks.WARDING_BLOCK.getStateManager().getStates()) // Block states
+            ImmutableSet.copyOf(ModBlocks.WARDING_STONE.getStateManager().getStates()) // Block states
     );
 
 
