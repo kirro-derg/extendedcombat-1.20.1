@@ -5,7 +5,6 @@ import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes;
 import dev.kirro.extendedcombat.block.ModBlocks;
-import dev.kirro.extendedcombat.item.ModItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.EquipmentSlot;

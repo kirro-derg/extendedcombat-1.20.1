@@ -5,15 +5,10 @@ import dev.kirro.extendedcombat.block.ModBlocks;
 import dev.kirro.extendedcombat.item.ModItems;
 //import dev.kirro.extendedcombat.sound.ModSounds;
 import dev.kirro.extendedcombat.villager.ModPOI;
-import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
-import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
-import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
-import net.minecraft.resource.ResourceType;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

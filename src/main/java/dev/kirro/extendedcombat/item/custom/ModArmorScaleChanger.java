@@ -1,14 +1,8 @@
 package dev.kirro.extendedcombat.item.custom;
 
-import com.google.common.collect.ImmutableMultimap;
-import com.google.common.collect.Multimap;
-import com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes;
 import dev.kirro.extendedcombat.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
-import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.entity.attribute.EntityAttribute;
-import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.network.ServerPlayerEntity;

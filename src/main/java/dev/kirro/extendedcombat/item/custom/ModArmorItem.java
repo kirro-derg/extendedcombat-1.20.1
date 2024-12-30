@@ -1,10 +1,6 @@
 package dev.kirro.extendedcombat.item.custom;
 
 import com.google.common.collect.ImmutableMap;
-import net.minecraft.enchantment.AquaAffinityEnchantment;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnchantmentHelper;
-import net.minecraft.enchantment.ProtectionEnchantment;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;

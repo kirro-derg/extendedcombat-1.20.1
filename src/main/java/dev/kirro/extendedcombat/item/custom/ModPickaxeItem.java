@@ -1,21 +1,10 @@
 package dev.kirro.extendedcombat.item.custom;
 
 
-import com.google.common.collect.ImmutableMultimap;
-import com.google.common.collect.Multimap;
-import com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes;
 import dev.kirro.extendedcombat.block.ModBlocks;
-import dev.kirro.extendedcombat.item.ModItems;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.entity.attribute.EntityAttribute;
-import net.minecraft.entity.attribute.EntityAttributeModifier;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
 
 
 public class ModPickaxeItem extends PickaxeItem {
