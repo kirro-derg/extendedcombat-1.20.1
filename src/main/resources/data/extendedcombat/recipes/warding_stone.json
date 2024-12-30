@@ -12,10 +12,10 @@
   "pattern": [
     "###",
     "#S#",
-    "###"
+    "#S#"
 
   ],
   "result": {
-    "item": "extendedcombat:warding_block"
+    "item": "extendedcombat:warding_stone"
   }
 }

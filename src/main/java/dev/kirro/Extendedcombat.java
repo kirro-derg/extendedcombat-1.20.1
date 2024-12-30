@@ -33,8 +33,6 @@ public class Extendedcombat implements ModInitializer {
 				updatePlayerScale(player);
 			}
 		});
-
-
 	}
 
 
