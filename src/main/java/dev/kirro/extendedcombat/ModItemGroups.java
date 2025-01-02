@@ -1,5 +1,6 @@
 package dev.kirro.extendedcombat;
 
+import dev.kirro.extendedcombat.ExtendedCombat;
 import dev.kirro.extendedcombat.block.ModBlocks;
 import dev.kirro.extendedcombat.item.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;

@@ -1,21 +1,13 @@
 package dev.kirro.extendedcombat.item.custom;
 
-
-import com.google.common.collect.ImmutableMultimap;
-import com.google.common.collect.Multimap;
-import com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes;
 import dev.kirro.extendedcombat.block.ModBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.entity.attribute.EntityAttribute;
-import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-
 
 public class PickSwordItem extends SwordItem {
     public PickSwordItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
@@ -56,30 +48,4 @@ public class PickSwordItem extends SwordItem {
     public boolean canMine(BlockState state, World world, BlockPos pos, PlayerEntity miner) {
         return true;
     }
-
-    @Override
-    public Multimap<EntityAttribute, EntityAttributeModifier> getAttributeModifiers(EquipmentSlot equipmentSlot) {
-        ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
-
-        if (equipmentSlot == EquipmentSlot.MAINHAND) {
-            builder.putAll(super.getAttributeModifiers(equipmentSlot));
-            builder.put(ReachEntityAttributes.ATTACK_RANGE, new EntityAttributeModifier(
-                    "Weapon range modifier",
-                    0.55, // The additional reach range you want to add
-                    EntityAttributeModifier.Operation.ADDITION
-            ));
-            builder.put(ReachEntityAttributes.REACH, new EntityAttributeModifier(
-                    "Weapon reach modifier",
-                    0.55, // The additional reach range you want to add
-                    EntityAttributeModifier.Operation.ADDITION
-            ));
-
-        }
-
-        return builder.build();
-    }
-
-
-
-
 }

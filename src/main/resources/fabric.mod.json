@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"dev.kirro.Extendedcombat"
+			"dev.kirro.extendedcombat.ExtendedCombat"
 		],
 		"fabric-datagen": [
 			"dev.kirro.ExtendedcombatDataGenerator"

@@ -1,6 +1,6 @@
 package dev.kirro.extendedcombat.mixin;
 
-import dev.kirro.Extendedcombat;
+import dev.kirro.extendedcombat.ExtendedCombat;
 import dev.kirro.extendedcombat.item.ModItems;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.item.ItemRenderer;
@@ -18,7 +18,7 @@ public abstract class ItemRendererMixin {
     @ModifyVariable(method = "renderItem", at = @At(value = "HEAD"), argsOnly = true)
     public BakedModel useItemModel(BakedModel value, ItemStack stack, ModelTransformationMode renderMode, boolean leftHanded, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
         if (stack.isOf(ModItems.NETHER_STEEL_GREATSWORD) && renderMode != ModelTransformationMode.GUI) {
-            return ((ItemRendererAccessorMixin) this).extendedcombat$getModels().getModelManager().getModel(new ModelIdentifier(Extendedcombat.MOD_ID, "nether_steel_greatsword_handheld", "inventory"));
+            return ((ItemRendererAccessorMixin) this).extendedcombat$getModels().getModelManager().getModel(new ModelIdentifier(ExtendedCombat.MOD_ID, "nether_steel_greatsword_handheld", "inventory"));
         }
         return value;
     }
