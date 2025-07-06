@@ -1,4 +1,4 @@
-package dev.kirro.extendedcombat.mixin;
+package dev.kirro.extendedcombat.mixin.client;
 
 import net.minecraft.client.render.item.ItemModels;
 import net.minecraft.client.render.item.ItemRenderer;

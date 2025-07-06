@@ -1,7 +1,11 @@
 package dev.kirro.extendedcombat;
 
 import dev.kirro.extendedcombat.block.ModBlocks;
+import dev.kirro.extendedcombat.block.entity.ModBlockEntityTypes;
+import dev.kirro.extendedcombat.component.ExtendedCombatEntityComponents;
 import dev.kirro.extendedcombat.item.ModItems;
+import dev.kirro.extendedcombat.item.behaviour.XPRepairTracker;
+import dev.kirro.extendedcombat.networking.ModMessages;
 import dev.kirro.extendedcombat.villager.ModPOI;
 //import dev.kirro.extendedcombat.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
@@ -26,10 +30,20 @@ public class ExtendedCombat implements ModInitializer {
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
         ModPOI.registerPOIs();
+        ModBlockEntityTypes.initializeBlockEntityTypes();
+        ExtendedCombatEntityComponents.register();
+        ModMessages.registerC2SPackets();
+
 
         ServerTickEvents.START_SERVER_TICK.register(server -> {
             for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
                 updatePlayerScale(player);
+            }
+        });
+
+        ServerTickEvents.END_SERVER_TICK.register(server -> {
+            for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
+                XPRepairTracker.tick(player);
             }
         });
     }

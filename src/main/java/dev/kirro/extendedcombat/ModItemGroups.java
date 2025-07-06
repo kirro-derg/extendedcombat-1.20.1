@@ -1,6 +1,5 @@
 package dev.kirro.extendedcombat;
 
-import dev.kirro.extendedcombat.ExtendedCombat;
 import dev.kirro.extendedcombat.block.ModBlocks;
 import dev.kirro.extendedcombat.item.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -23,6 +22,9 @@ public class ModItemGroups {
 
                 entries.add(ModBlocks.NETHER_STEEL_BLOCK);
                 entries.add(ModBlocks.WARDING_STONE);
+                entries.add(ModBlocks.FLAT_BLOCK);
+                entries.add(ModBlocks.FRAMED_GLASS_PANEL);
+                entries.add(ModBlocks.HEAVY_DOOR);
 
                 entries.add(ModItems.NETHER_STEEL_GREATSWORD);
                 entries.add(ModItems.NETHER_STEEL_PICKAXE);
@@ -31,6 +33,9 @@ public class ModItemGroups {
                 entries.add(ModItems.NETHER_STEEL_LEGGINGS);
                 entries.add(ModItems.NETHER_STEEL_CHESTPLATE);
                 entries.add(ModItems.NETHER_STEEL_HELMET);
+
+                //entries.add(ModItems.WOOL_SLEEVES_LEFT);
+                //entries.add(ModItems.WOOL_SLEEVES_RIGHT);
 
             }).build());
 

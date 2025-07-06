@@ -1,7 +1,6 @@
 {
   "variants": {
-    "": {
-      "model": "extendedcombat:block/warding_stone"
-    }
+    "half=upper": {"model": "extendedcombat:block/warding_stone_upper"},
+    "half=lower": {"model": "extendedcombat:block/warding_stone_lower"}
   }
 }

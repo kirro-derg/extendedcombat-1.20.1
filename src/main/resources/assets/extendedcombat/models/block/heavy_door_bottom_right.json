@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/door_bottom_right",
+	"textures": {
+		"bottom": "extendedcombat:block/heavy_door_bottom"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 12],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 16]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#bottom"},
+				"east": {"uv": [3, 0, 7, 16], "texture": "#bottom"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#bottom"},
+				"west": {"uv": [3, 0, 7, 16], "texture": "#bottom"},
+				"up": {"uv": [0, 0, 16, 4], "rotation": 180, "texture": "#bottom"},
+				"down": {"uv": [0, 0, 16, 4], "rotation": 180, "texture": "#bottom"}
+			}
+		}
+	],
+	"display": {}
+}

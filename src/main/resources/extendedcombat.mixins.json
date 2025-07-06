@@ -8,11 +8,14 @@
 
 	],
 	"client": [
-		"TwoHandedGreatswordMixin",
-		"HideOffhandItemMixin",
-		"ItemRendererAccessorMixin",
-		"ItemRendererMixin",
-		"ModelLoaderMixin"
+		"client.TwoHandedGreatswordMixin",
+		"client.HideOffhandItemMixin",
+		"client.ItemRendererAccessorMixin",
+		"client.ItemRendererMixin",
+		"client.ModelLoaderMixin",
+		"client.ArmorFeatureRendererMixin",
+		"client.PlayerEntityMixin",
+		"client.GhostCharmAccessMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

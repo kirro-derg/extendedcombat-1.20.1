@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "extendedcombat:item/wool_sleeve_right",
+		"particle": "extendedcombat:item/wool_sleeve_right"
+	},
+	"elements": [
+		{
+			"from": [5.9, -3, 5.9],
+			"to": [10.1, 5, 10.1],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 1, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 4, 8], "texture": "#1"},
+				"east": {"uv": [4, 0, 8, 8], "texture": "#1"},
+				"south": {"uv": [0, 8, 4, 16], "texture": "#1"},
+				"west": {"uv": [8, 0, 12, 8], "texture": "#1"},
+				"up": {"uv": [8, 12, 4, 8], "texture": "#1"},
+				"down": {"uv": [12, 8, 8, 12], "texture": "#1"}
+			}
+		}
+	],
+	"display": {}
+}

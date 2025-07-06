@@ -3,7 +3,15 @@
 	"id": "extendedcombat",
 	"version": "${version}",
 	"name": "extendedcombat",
-	"description": "Mod that adds a \"small\" weapon, and some armour, more may be to come :3",
+	"description": "A weapon, some armour, and maybe some decoration elements :3",
+
+	"custom": {
+		"cardinal-components": [
+			"extendedcombat:ghost_charm_component"
+
+		]
+	},
+
 	"authors": [
 		"kirro"
 	],
@@ -23,6 +31,9 @@
 		],
 		"client": [
 			"dev.kirro.extendedcombat.ExtendedCombatClient"
+		],
+		"cardinal-components": [
+			"dev.kirro.extendedcombat.component.ExtendedCombatEntityComponents"
 		]
 	},
 	"mixins": [

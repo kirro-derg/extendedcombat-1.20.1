@@ -10,8 +10,10 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class PickSwordItem extends SwordItem {
+
     public PickSwordItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
         super(material, attackDamage, attackSpeed, settings);
+
     }
 
     @Override
@@ -48,4 +50,27 @@ public class PickSwordItem extends SwordItem {
     public boolean canMine(BlockState state, World world, BlockPos pos, PlayerEntity miner) {
         return true;
     }
+
+
+
+    /*@Override
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
+        SwordBlockingComponent component = ExtendedCombatEntityComponents.SWORD_BLOCKING_COMPONENT.get(player);
+
+        if (!world.isClient) {
+            ItemStack itemStack = player.getStackInHand(hand);
+            if (player.getMainHandStack().isOf(ModItems.NETHER_STEEL_GREATSWORD)) {
+                player.setCurrentHand(hand);
+                component.setBlocking(true);
+                player.sendMessage(Text.literal("You are now blocking"), true);
+                return TypedActionResult.success(itemStack);
+            } else {
+                component.setBlocking(false);
+                player.sendMessage(Text.literal("You are no longer blocking"), true);
+                return TypedActionResult.fail(itemStack);
+            }
+        } else {
+            return TypedActionResult.pass(player.getStackInHand(hand));
+        }
+    }*/
 }

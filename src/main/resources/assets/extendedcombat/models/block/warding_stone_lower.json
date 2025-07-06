@@ -1,22 +1,20 @@
 {
 	"credit": "Made with Blockbench",
-	"texture_size": [32, 32],
 	"textures": {
-		"particle": "extendedcombat:block/warding_stone_side",
-		"top": "extendedcombat:block/warding_stone_top",
-		"side": "extendedcombat:block/warding_stone_side"
+		"particle": "extendedcombat:block/warding_stone_lower",
+		"upper": "extendedcombat:block/warding_stone_lower"
 	},
 	"elements": [
 		{
 			"from": [1, 0, 1],
-			"to": [15, 32, 15],
+			"to": [15, 16, 15],
 			"faces": {
-				"north": {"uv": [0, 0, 7, 16], "texture": "#side"},
-				"east": {"uv": [0, 0, 7, 16], "texture": "#side"},
-				"south": {"uv": [0, 0, 7, 16], "texture": "#side"},
-				"west": {"uv": [0, 0, 7, 16], "texture": "#side"},
-				"up": {"uv": [15, 15, 1, 1], "texture": "#top"},
-				"down": {"uv": [15, 1, 1, 15], "texture": "#top", "cullface": "down"}
+				"north": {"uv": [0, 8, 7, 16], "texture": "#upper"},
+				"east": {"uv": [0, 8, 7, 16], "texture": "#upper"},
+				"south": {"uv": [0, 8, 7, 16], "texture": "#upper"},
+				"west": {"uv": [0, 8, 7, 16], "texture": "#upper"},
+				"up": {"uv": [7.5, 8.5, 14.5, 15.5], "texture": "#upper"},
+				"down": {"uv": [7.5, 8.5, 14.5, 15.5], "texture": "#upper"}
 			}
 		}
 	],

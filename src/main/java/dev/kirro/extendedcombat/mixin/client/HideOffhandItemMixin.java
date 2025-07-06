@@ -1,4 +1,4 @@
-package dev.kirro.extendedcombat.mixin;
+package dev.kirro.extendedcombat.mixin.client;
 
 import dev.kirro.extendedcombat.item.custom.PickSwordItem;
 import net.minecraft.client.render.VertexConsumerProvider;

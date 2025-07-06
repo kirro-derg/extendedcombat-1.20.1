@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=north": { "model": "extendedcombat:block/flat_block" },
+    "facing=east": { "model": "extendedcombat:block/flat_block", "y": 90 },
+    "facing=south": { "model": "extendedcombat:block/flat_block", "y": 180 },
+    "facing=west": { "model": "extendedcombat:block/flat_block", "y": 270 },
+    "facing=up": { "model": "extendedcombat:block/flat_block", "x": 270 },
+    "facing=down": { "model": "extendedcombat:block/flat_block", "x": 90 }
+  }
+}

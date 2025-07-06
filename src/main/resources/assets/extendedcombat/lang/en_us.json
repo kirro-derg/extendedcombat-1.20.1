@@ -4,13 +4,20 @@
   "item.extendedcombat.nether_steel_ingot": "Nether Steel Ingot",
   "item.extendedcombat.handle": "Sturdy Handle",
   "item.extendedcombat.nether_steel_upgrade": "Nether Steel Upgrade Template",
+  "item.extendedcombat.ghost_charm": "ghost Charm",
 
   "item.extendedcombat.nether_steel_greatsword": "Nether Steel Greatsword",
   "item.extendedcombat.nether_steel_pickaxe": "Nether Steel Pickaxe",
 
   "block.extendedcombat.nether_steel_block": "Block of Nether Steel",
   "block.extendedcombat.warding_stone": "Warding Stone",
-  "tooltip.extendedcombat.warding_stone": "Once placed, this stone will disable mob spawning in a 55 block radius around itself",
+  "tooltip.extendedcombat.warding_stone_ln1": "Once placed, this stone will disable",
+  "tooltip.extendedcombat.warding_stone_ln2": "mob spawning in a 55 block radius",
+  "tooltip.extendedcombat.warding_stone_ln3": "around itself",
+  "tooltip.extendedcombat.nether_steel_ingot": "This metal has strangely durable properties, and seems to absorb experience points rather well",
+  "block.extendedcombat.framed_glass_panel": "Framed Glass Panel",
+  "block.extendedcombat.flat_block": "Flat Block",
+  "block.extendedcombat.heavy_door": "Heavy Door",
 
   "item.extendedcombat.nether_steel_helmet": "Nether Steel Helmet",
   "item.extendedcombat.nether_steel_chestplate": "Nether Steel Chestplate",

@@ -1,4 +1,4 @@
-package dev.kirro.extendedcombat.mixin;
+package dev.kirro.extendedcombat.mixin.client;
 
 import dev.kirro.extendedcombat.ExtendedCombat;
 import dev.kirro.extendedcombat.item.ModItems;

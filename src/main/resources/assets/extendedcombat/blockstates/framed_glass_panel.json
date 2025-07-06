@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=north": { "model": "extendedcombat:block/framed_glass_panel" },
+    "facing=east": { "model": "extendedcombat:block/framed_glass_panel", "y": 90 },
+    "facing=south": { "model": "extendedcombat:block/framed_glass_panel", "y": 180 },
+    "facing=west": { "model": "extendedcombat:block/framed_glass_panel", "y": 270 },
+    "facing=up": { "model": "extendedcombat:block/framed_glass_panel", "x": 270 },
+    "facing=down": { "model": "extendedcombat:block/framed_glass_panel", "x": 90 }
+  }
+}
